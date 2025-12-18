@@ -199,9 +199,17 @@ main {
     border: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.product-card:hover {
+.product-card.ruby:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px  rgba(220, 53, 69, 0.3);
+}
+.product-card.emeraude:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(67, 249, 134, 0.2);
+}
+.product-card.amethyste:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(156, 39, 176, 0.3);
 }
 
 /* Couleurs spécifiques pour chaque carte */
