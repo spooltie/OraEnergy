@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Ora Energy - Contact</title>
+</head>
+
+<body>
+    <div class="scroll-progress"></div>
+    <header>
+        <a href="index.html" ><img class="logoblanc" src="RESSOURCES/LOGO-blanc.png" alt="LOGO-blanc"></a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </label>
+
+        <nav class="navbar">
+            <ul class="navmenu">
+                <li><a href="index.html" class="navlink">Accueil</a></li>
+                <li><a href="produits.html" class="navlink">Nos Produits</a></li>
+                <li><a href="histoire.html" class="navlink">Notre Histoire</a></li>
+                <li><a href="contact.html" class="navlink">Contact</a></li>
+            </ul>
+            <div class="icon-box">
+                <img src="RESSOURCES/flash.png" alt="icone">
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <h1 class="page-title">Contactez-nous</h1>
+
+        <p class="contact-intro">Contacte-nous facilement pour toute question.</p>
+
+        <div class="contact-info">
+            <p><span class="info-label">Email :</span> <a href="mailto:pro.oraenergy@gmail.com"
+                    class="info-link">pro.oraenergy@gmail.com</a></p>
+            <p><span class="info-label">Téléphone :</span> <a href="tel:+33666666666" class="info-link">+33 6 66 66 66
+                    66</a></p>
+            <p><span class="info-label">Adresse :</span> 6 rue Ampère, Labège 31670</p>
+        </div>
+
+        <p class="contact-description">
+            Notre équipe se fera un plaisir de vous répondre rapidement, que ce soit pour une simple information, une
+            collaboration ou une demande sur mesure. N'hésite pas à nous écrire, appeler ou passer nous voir.
+        </p>
+
+        <hr class="contact-divider">
+
+        <!-- FORMULAIRE DE CONTACT -->
+        <div class="form-container">
+            <h2 class="form-title">Nous contacter :</h2>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nom">Nom complet *</label>
+                    <input type="text" id="nom" name="nom" placeholder="Nom Prénom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="oraenergy@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sujet">Sujet*</label>
+                    <input type="text" id="sujet" name="sujet" placeholder="Votre sujet..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Envoyer le message</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <nav class="footer-nav">
+                <a href="index.html#accueilID" class="footer-link">ACCUEIL</a>
+                <a href="produits.html" class="footer-link">NOS PRODUITS</a>
+                <img src="RESSOURCES/LOGO-blanc.png" alt="ORA Energy" class="footer-logo">
+                <a href="contact.html" class="footer-link">CONTACT</a>
+                <a href="index.html#histoire" class="footer-link">NOTRE HISTOIRE</a>
+            </nav>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 ORA ENERGY. TOUS DROITS RÉSERVÉS.</p>
+
+                <div class="footer-legal">
+                    <a href="#mentions" class="footer-legal-link">MENTIONS LÉGALES</a>
+                    <a href="#cookies" class="footer-legal-link">COOKIES</a>
+                    <a href="#confidentialite" class="footer-legal-link">CONFIDENTIALITÉ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const progressBar = document.querySelector('.scroll-progress');
+            const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = (window.scrollY / windowHeight);
+            progressBar.style.transform = `scaleX(${scrolled})`;
+        });
+    </script>
+</body>
+
+</html>

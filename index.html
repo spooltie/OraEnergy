@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ora Energy - Site Officiel</title>
+</head>
+
+<body>
+    <div class="scroll-progress"></div>
+    <header>
+        <a href="index.html"><img class="logoblanc" src="RESSOURCES/LOGO-blanc.png" alt="LOGO-blanc"></a>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="burger">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </label>
+
+        <nav class="navbar">
+            <ul class="navmenu">
+                <li><a href="#accueilID" class="navlink">Accueil</a></li>
+                <li><a href="produits.html" class="navlink">Nos Produits</a></li>
+                <li><a href="histoire.html" class="navlink">Notre Histoire</a></li>
+                <li><a href="contact.html" class="navlink">Contact</a></li>
+            </ul>
+            <div class="icon-box">
+                <img src="RESSOURCES/flash.png" alt="icone">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="categories">
+            <section class="accueil" id="accueilID">
+                <div class="block-texte">
+                    <p class="titleP">BOOST</p>
+                    <p class="pcate">Ton Energie</p>
+                </div>
+                <div class="corner-frame top-left"></div>
+                <div class="corner-frame bottom-right"></div>
+                <div class="boost-buttons">
+                    <a href="produits.html" class="btn btn-primary">Découvrir</a>
+                    <button class="btn btn-secondary">Acheter</button>
+                </div>
+                <div class="picturecate">
+                    <img src="RESSOURCES/ROUGE.png" alt="produit">
+                    <img src="RESSOURCES/VERTE.png" alt="produit">
+                    <img src="RESSOURCES/VIOLETTE.png" alt="produit">
+                </div>
+            </section>
+
+            <hr class="hr-white">
+
+            <section class="Nhistoire" id="Nhistoire">
+                <div class="block-texte">
+                    <p class="titleP">NOTRE</p>
+                    <p class="pcate">Histoire</p>
+                </div>
+                <div class="fleche">
+                    <img class="flech" src="RESSOURCES/fleche.png" alt="fleche">
+                </div>
+                <div class="corner-frame top-left2"></div>
+                <div class="histoire-content">
+                    <p>Découvre l'univers de nos saveurs et laisse-toi guider par la gourmandise.</p>
+                    <p>Des goûts classiques aux plus inattendus, chaque recette a été pensée pour te surprendre et te
+                        donner envie d'en goûter toujours plus. Clique pour explorer toutes nos créations et trouver
+                        celle qui te fera craquer.</p>
+                    <a href="histoire.html" class="btn btn-primary">Découvre notre histoire →</a>
+                </div>
+                <div class="corner-frame bottom-right2"></div>
+            </section>
+
+            <hr class="hr-white">
+
+            <section class="news">
+                <div class="block-texte">
+                    <p class="titleP">NEWS</p>
+                    <p class="pcate">suivez nous</p>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://instagram.com" target="_blank" class="social-icon">
+                        <img src="RESSOURCES/insta.webp" alt="Logo-instagram">
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="social-icon">
+                        <img src="RESSOURCES/X.png" alt="Logo-x">
+                    </a>
+                </div>
+
+                <div class="tweet-container">
+                    <blockquote class="twitter-tweet">
+                        <p lang="fr" dir="ltr">Des recettes naturelles, pleines de goût et de
+                            caractère.<br><br>Chaque
+                            gorgée est unique et pleine de fraîcheur. 🥂<br><br>Découvre-les ici 👉 <a
+                                href="https://t.co/idr02ISCCy">https://t.co/idr02ISCCy</a><a
+                                href="https://twitter.com/hashtag/SaveursNaturelles?src=hash&amp;ref_src=twsrc%5Etfw">#SaveursNaturelles</a>
+                        </p>&mdash; Ora Energy (@EnergyOra) <a
+                            href="https://twitter.com/EnergyOra/status/2001240937595592907?ref_src=twsrc%5Etfw">December
+                            17, 2025</a>
+                    </blockquote>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <nav class="footer-nav">
+                <a href="#accueilID" class="footer-link">ACCUEIL</a>
+                <a href="produits.html" class="footer-link">NOS PRODUITS</a>
+                <img src="RESSOURCES/LOGO-blanc.png" alt="ORA Energy" class="footer-logo">
+                <a href="contact.html" class="footer-link">CONTACT</a>
+                <a href="histoire.html" class="footer-link">NOTRE HISTOIRE</a>
+            </nav>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2025 ORA ENERGY. TOUS DROITS RÉSERVÉS.</p>
+
+                <div class="footer-legal">
+                    <a href="#mentions" class="footer-legal-link">MENTIONS LÉGALES</a>
+                    <a href="#cookies" class="footer-legal-link">COOKIES</a>
+                    <a href="#confidentialite" class="footer-legal-link">CONFIDENTIALITÉ</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script>
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const progressBar = document.querySelector('.scroll-progress');
+            const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = (window.scrollY / windowHeight);
+            progressBar.style.transform = `scaleX(${scrolled})`;
+        });
+    </script>
+</body>
+
+</html>
