@@ -785,10 +785,10 @@ footer {
 
     .histoire-content .btn-primary {
         position: static;
-        width: 100%;
+        width: auto;
         max-width: 250px;
-        margin: 2rem auto 0;
-        display: block;
+        margin: 3rem 0 0 0;
+        display: inline-block;
         text-align: center;
         padding: 12px 30px;
         font-size: 14px;
