@@ -379,6 +379,11 @@ main {
     color: white;
 }
 
+.histoire-content .btn-primary {
+    margin-top: 2rem;
+    display: inline-block;
+}
+
 /*===================
     NEWS SECTION
 ===================*/
